@@ -1,0 +1,189 @@
+* {
+  margin: 0px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: rgb(17, 12, 66);
+  color: aliceblue;
+}
+
+h5 {
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: bold;
+  padding: 30px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68%;
+}
+
+.content-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.date {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-weight: none;
+}
+
+.completa {
+  text-decoration: line-through;
+  color: rgb(1, 133, 12);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: bold;
+}
+
+/* DATOS */
+.datos {
+  background-color: rgb(17, 12, 66);
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  gap: 10px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: bold;
+}
+
+#titulo-form {
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: bold;
+}
+
+.datos p {
+  background-color: rgb(52, 52, 53);
+  color: aliceblue;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+/* CONTENEDOR */
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 15px;
+}
+
+.contenedor .formulario {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(5, 36, 130);
+  color: #fff;
+  max-height: 170px;
+  border-radius: 10px;
+  border: 1px solid #040404;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .formulario input[type="text"] {
+  border: none;
+  padding: 8px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.contenedor .formulario input[type="text"]:focus {
+  outline: none;
+}
+
+.contenedor .formulario input[type="submit"] {
+  border: 1px solid #fff;
+  padding: 9px;
+  background-color: rgb(9, 34, 69);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 500;
+}
+.contenedor .formulario input[type="submit"]:hover {
+  transform: scale(0.9);
+  transition: transform ease-in-out 300ms;
+}
+
+/* TAREAS */
+.contenedor .tareas {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(137, 136, 138);
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .item-tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px 2px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+  cursor: move;
+}
+
+.item-tarea:has(.completa) {
+  cursor: not-allowed;
+}
+
+.eliminar {
+  border: none;
+  background-color: rgb(144, 1, 1);
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform ease 300ms;
+  padding: 8px;
+}
+
+.eliminar:hover {
+  transform: scale(1.1);
+}
+
+.completada {
+  border: none;
+  background-color: rgb(41, 1, 125);
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+  padding: 8px;
+}
+
+.completada:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 15px;
+  }
+}
