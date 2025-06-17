@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgb(67, 66, 66);
 }
 
 h1 {
@@ -177,6 +178,193 @@ h5 {
 }
 
 .completada:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+/* sub tasks*/
+.subtasks-container {
+  width: 100%;
+  transition: transform ease-in-out 3ms;
+}
+
+.subtask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  margin: 10px;
+  background-color: rgba(137, 136, 138, 0.5);
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.subtask-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.subtask-date {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-weight: none;
+}
+
+.subtask p {
+  margin: 5px 0;
+}
+
+.add-subtask {
+  border: none;
+  background-color: rgb(100, 1, 125);
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.toggle-subtasks {
+  border: none;
+  background-color: rgb(3, 1, 125);
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.toggle-subtasks:hover {
+  transform: scale(1.1);
+}
+.add-subtask:hover {
+  transform: scale(1.1);
+}
+
+.btn-edit {
+  border: none;
+  background-color: rgb(3, 1, 125);
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  border: none;
+  background-color: rgb(144, 1, 1);
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform ease 300ms;
+  padding: 8px;
+}
+
+.btn-edit:hover {
+  transform: scale(1.1);
+}
+.btn-delete:hover {
+  transform: scale(1.1);
+}
+
+/* subForm*/
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.subtask-form {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgb(40, 5, 130);
+  max-height: 170px;
+  z-index: 11;
+}
+
+.subtask-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+.subtask-form .input-subtask {
+  border: none;
+  padding: 8px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.save-subtask {
+  border: 1px solid #fff;
+  padding: 9px;
+  border-radius: 5px;
+  background-color: rgb(1, 40, 125);
+  color: #fff;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.save-subtask:hover {
+  background-color: rgb(100, 1, 125);
+}
+
+.save-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.save-close:hover {
   transform: scale(1.1);
 }
 
