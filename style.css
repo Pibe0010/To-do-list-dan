@@ -15,7 +15,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   padding: 10px;
-  background-color: rgb(17, 12, 66);
+  background-color: rgb(12, 26, 66);
   color: aliceblue;
 }
 
@@ -53,7 +53,7 @@ h5 {
 
 /* DATOS */
 .datos {
-  background-color: rgb(17, 12, 66);
+  background-color: rgb(12, 26, 66);
   display: flex;
   justify-content: center;
   padding: 15px;
@@ -70,7 +70,7 @@ h5 {
 }
 
 .datos p {
-  background-color: rgb(52, 52, 53);
+  background-color: transparent;
   color: aliceblue;
   padding: 6px 10px;
   border-radius: 5px;
@@ -95,7 +95,7 @@ h5 {
   max-height: 170px;
   border-radius: 10px;
   border: 1px solid #040404;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(255, 253, 253, 0.2);
 }
 
 .contenedor .formulario input[type="text"] {
@@ -110,29 +110,14 @@ h5 {
   outline: none;
 }
 
-.contenedor .formulario input[type="submit"] {
-  border: 1px solid #fff;
-  padding: 9px;
-  background-color: rgb(9, 34, 69);
-  color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  font-weight: 500;
-}
-.contenedor .formulario input[type="submit"]:hover {
-  transform: scale(0.9);
-  transition: transform ease-in-out 300ms;
-}
-
 /* TAREAS */
 .contenedor .tareas {
   padding: 10px;
   margin: 10px;
   background-color: rgb(137, 136, 138);
-  border: 1px solid #000000;
+  border: 1px solid #040404;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(255, 253, 253, 0.2);
 }
 
 .contenedor .item-tarea {
@@ -352,10 +337,6 @@ h5 {
   font-size: 1rem;
   font-weight: bold;
   margin: 5px;
-}
-
-.save-subtask:hover {
-  background-color: rgb(100, 1, 125);
 }
 
 .save-close {

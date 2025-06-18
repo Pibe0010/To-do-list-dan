@@ -84,7 +84,7 @@ function AllTask() {
             <div class="subtask-form" data-id="${item.id}" >
                 <span class="subtask-title"> Nueva subtarea</span>
                 <input type="text" placeholder="Escribe tu subtarea" class="input-subtask" />
-                <button class="save-subtask">Guardar</button>
+                <button class="save-subtask button">Guardar</button>
                 <img class="save-close" src="./img/close_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg" />
             </div>
           </div>
